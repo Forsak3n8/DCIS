@@ -7,9 +7,9 @@ if (!isset($_SESSION['loggedin'])) {
 	exit;
 }
 $DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
-$DATABASE_PASS = '';
-$DATABASE_NAME = 'phplogin';
+$DATABASE_USER = 'admin';
+$DATABASE_PASS = 'admin';
+$DATABASE_NAME = 'DICSIPS';
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if (mysqli_connect_errno()) {
 	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
