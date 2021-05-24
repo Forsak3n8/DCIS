@@ -47,9 +47,6 @@ if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email, acti
 	$uniqid = uniqid();
 	$stmt->bind_param('ssss', $_POST['username'], $password, $_POST['email'], $uniqid);
 	$stmt->execute();
-	echo 'You have successfully registered, you can now login!';
-} else {
-	// Something is wrong with the sql statement, check to make sure accounts table exists with all 3 fields.
 	$from    = 'forsak3n8@gmail.com';
 	$subject = 'Account Activation Required';
 	$headers = 'From: ' . $from . "\r\n" . 'Reply-To: ' . $from . "\r\n" . 'X-Mailer: PHP/' . phpversion() . "\r\n" . 'MIME-Version: 1.0' . "\r\n" . 'Content-Type: text/html; charset=UTF-8' . "\r\n";
@@ -58,7 +55,6 @@ if ($stmt = $con->prepare('INSERT INTO accounts (username, password, email, acti
 	$message = '<p>Please click the following link to activate your account: <a href="' . $activate_link . '">' . $activate_link . '</a></p>';
 	mail($_POST['email'], $subject, $message, $headers);
 	echo 'Please check your email to activate your account!';
-}
 	}
 	$stmt->close();
 } else {
