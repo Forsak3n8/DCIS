@@ -131,3 +131,69 @@ body.loggedin {
 	margin: 0 0 10px 0;
 }
 /*Home page end*/
+
+/* Inventory page */
+fieldset {
+	border-style: none;
+}
+
+.inlineform {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.inlineform h1 {
+	font-weight: bold;
+	color: #4a536e;
+	margin: 5px 10px 5px 0;
+}
+
+.inlineform label {
+	margin: 5px 10px 5px 0;
+	color: #4a536e;
+}
+
+.inlineform input {
+	vertical-align: middle;
+	margin: 5px 10px 5px 0;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+.inlineform input[type=submit] {
+	color: #c1c4c8;
+	background-color: #2f3947;
+}
+
+.inlineform input[type=submit]:hover {
+	color: #eaebed;
+}
+
+.inlineform input[type=number] {
+	color: #4a536e;
+}
+
+.inlineform input[type=number]:focus {
+	border: 1px solid #ddd;
+	outline: none;
+	background-color: #ddd;
+}
+
+.content > p, .content > div {
+	padding: 10px;
+}
+/* Inventory page end/*
+
+/* Remove HTML number form arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* Remove HTML number form arrows */

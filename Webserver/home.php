@@ -1,12 +1,12 @@
 <?php
-// We need to use sessions, so you should always start sessions using the below code.
+We need to use sessions, so you should always start sessions using the below code.
 session_start();
-// If the user is not logged in redirect to the login page...
+If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.html');
 	exit;
 }
-?>
+?> -->
 
 <!DOCTYPE html>
 <html>
@@ -20,8 +20,10 @@ if (!isset($_SESSION['loggedin'])) {
 		<nav class="navtop">
 			<div>
 				<h1>Website Title</h1>
-				<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
+				<a href="home.php"><i class="fas fa-home"></i>Home</a>
+				<a href="inventory.php"><i class="fas fa-archive"></i>Inventory</a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+				
 			</div>
 		</nav>
 		<div class="content">
