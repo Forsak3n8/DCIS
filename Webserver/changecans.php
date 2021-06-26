@@ -16,3 +16,4 @@ $stmt = $con->prepare('SELECT title, qoh FROM cans');
 $stmt->execute();
 $var = $stmt->fetchall();
 $var_dump($var);
+?>
