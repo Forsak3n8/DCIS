@@ -15,6 +15,6 @@ if ( mysqli_connect_errno() ) {
 $stmt = $con->prepare('SELECT title, qoh FROM cans');
 $stmt->execute();
 $stmt->bind_result($var);
-$var = $stmt->fetch($var);
+$var = $stmt->fetch();
 var_dump($var);
 ?>
