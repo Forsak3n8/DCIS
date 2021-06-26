@@ -46,25 +46,6 @@ if (!isset($_SESSION['loggedin'])) {
 				</fieldset>
 			</form>
 			</div>
-			<h2>Box Inventory Counts</h2>
-			<div>
-			<form action="changeboxes.php" method="post">
-				<fieldset class="inlineform">
-					<h1>TEST TITLE</h1>
-					<label for="count">Current Amount:</label><br>
-					<input type="number" id="count" name="countbox"><br>
-					<input type="submit" value="Submit">
-				</fieldset>
-			</form>
-			<form action="changeboxes.php" method="post">
-				<fieldset class="inlineform">
-					<h1>TEST TITLE</h1>
-					<label for="currentamount">Current Amount:</label><br>
-					<input type="number" id="countinput" name="countbox"><br>
-					<input type="submit" value="Submit">
-				</fieldset>
-			</form>
-			</div>
 		</div>
 	</body>
 </html>
