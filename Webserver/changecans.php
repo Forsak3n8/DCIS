@@ -14,7 +14,6 @@ if ( mysqli_connect_errno() ) {
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
 $stmt = $con->prepare('SELECT title, qoh FROM cans');
 $stmt->execute();
-$stmt->bind_result($var, $var);
-$var = $stmt->fetch_array(MYSQLI_ASSOC);
+$var = $stmt->fetch_array($var,MYSQLI_ASSOC);
 printf($var);
 ?>
