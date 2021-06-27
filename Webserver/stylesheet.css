@@ -141,12 +141,14 @@ fieldset {
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
+	justify-content: right;
 }
 
 .inlineform h1 {
 	font-weight: bold;
 	color: #4a536e;
 	margin: 5px 10px 5px 0;
+	margin-right: auto;
 }
 
 .inlineform label {
@@ -173,6 +175,8 @@ fieldset {
 
 .inlineform input[type=number] {
 	color: #4a536e;
+	width: 50px;
+	text-align: center;
 }
 
 .inlineform input[type=number]:focus {
