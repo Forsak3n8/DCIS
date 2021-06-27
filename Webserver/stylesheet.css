@@ -169,10 +169,14 @@ fieldset {
 
 .inlineform input[type=submit]:hover {
 	color: #eaebed;
+	position: absolute;
+	right: 200px;
 }
 
 .inlineform input[type=number] {
 	color: #4a536e;
+	position: absolute;
+	right: 280px;
 }
 
 .inlineform input[type=number]:focus {
