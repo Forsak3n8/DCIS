@@ -54,20 +54,16 @@ $stmt->close();
 			<h2>Can Inventory Counts</h2>
 			<div>
 			<form action="changecans.php" method="post">
-				<fieldset class="inlineform">
-					<h1>TEST TITLE</h1>
-					<label for="currentamount">Current Amount:</label><br>
-					<input type="number" id="countinput" name="countbox"><br>
-					<input type="submit" value="Submit">
-				</fieldset>
-			</form>
-			<form action="changecans.php" method="post">
-				<fieldset class="inlineform">
-					<h1>TEST TITLE</h1>
-					<label for="currentamount">Current Amount:</label><br>
-					<input type="number" id="countinput" name="countbox"><br>
-					<input type="submit" value="Submit">
-				</fieldset>
+				<?php
+				foreach ($rows as $row) {
+				echo <fieldset class="inlineform">;
+					echo <h1>$row['title']</h1>;
+					echo <label for="currentamount">Current Amount:</label><br>;
+					echo <input type="number" placeholder="$row['qoh']" id="countinput" name="countbox"><br>;
+					echo <input type="submit" value="Submit">;
+				echo </fieldset>;
+				}
+				?>
 			</form>
 			</div>
 		</div>
