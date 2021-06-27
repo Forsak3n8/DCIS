@@ -56,12 +56,12 @@ $stmt->close();
 			<form action="changecans.php" method="post">
 				<?php
 				foreach ($rows as $row) {
-				echo <fieldset class="inlineform">;
-					echo <h1>$row['title']</h1>;
-					echo <label for="currentamount">Current Amount:</label><br>;
-					echo <input type="number" placeholder="$row['qoh']" id="countinput" name="countbox"><br>;
-					echo <input type="submit" value="Submit">;
-				echo </fieldset>;
+				echo "<fieldset class="inlineform">";
+					echo "<h1>$row['title']</h1>";
+					echo "<label for="currentamount">Current Amount:</label><br>";
+					echo "<input type="number" placeholder="$row['qoh']" id="countinput" name="countbox"><br>";
+					echo "<input type="submit" value="Submit">";
+				echo "</fieldset>";
 				}
 				?>
 			</form>
