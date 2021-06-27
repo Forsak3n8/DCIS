@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <?php
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
@@ -29,9 +31,6 @@ foreach ($rows as $row) {
 
 $stmt->close();
 ?>
-
-<!DOCTYPE html>
-<html>
 	<head>
 		<meta charset="utf-8">
 		<title>Home Page</title>
