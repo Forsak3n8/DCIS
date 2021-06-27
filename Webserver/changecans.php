@@ -22,7 +22,7 @@ $rows[] = $row;
 
 foreach($rows as $row)
 {
-echo nl2br($row['title']);
+echo nl2br($row['title'], "\n");
 echo $row['qoh'];
 }
 ?>
