@@ -16,5 +16,5 @@ $stmt = $con->prepare('SELECT title, qoh FROM cans');
 $stmt->execute();
 $var = $stmt->get_result();
 $row = $var->fetch_array(MYSQLI_NUM);
-print($row);
+var_dump($row);
 ?>
