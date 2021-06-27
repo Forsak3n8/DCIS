@@ -22,7 +22,7 @@ $rows[] = $row;
 
 foreach($rows as $row)
 {
-echo $row['title'],"\r\n";
+echo "$row['title']";
 echo $row['qoh'];
 }
 ?>
