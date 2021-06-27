@@ -15,6 +15,15 @@ if ( mysqli_connect_errno() ) {
 $stmt = $con->prepare('SELECT title, qoh FROM cans');
 $stmt->execute();
 $var = $stmt->get_result();
-$row = $var->fetch_array(MYSQLI_ASSOC);
+while($row = $var->fetch_array())
+{
+$rows[] = $row;
+}
+
+foreach($rows as $row)
+{
+echo $row['title'];
+}
+
 var_dump($row);
 ?>
