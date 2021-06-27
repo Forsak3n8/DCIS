@@ -15,5 +15,6 @@ if ( mysqli_connect_errno() ) {
 $stmt = $con->prepare('SELECT title, qoh FROM cans');
 $stmt->execute();
 $var = $stmt->get_result();
-printf($var);
+$row = $var->fetch_array(MYSQLI_NUM)
+printf($row);
 ?>
