@@ -20,9 +20,6 @@ while($row = $var->fetch_array())
 $rows[] = $row;
 }
 
-foreach($rows as $row)
-{
-echo nl2br($row['title'], "\n");
-echo $row['qoh'];
-}
+echo $rows[0]);
+
 ?>
