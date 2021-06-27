@@ -19,7 +19,7 @@ if (!isset($_SESSION['loggedin'])) {
 	<body class="loggedin">
 		<nav class="navtop">
 			<div>
-				<h1>Website Title</h1>
+				<h1>DCIS Inventory System</h1>
 				<a href="home.php"><i class="fas fa-home"></i>Home</a>
 				<a href="inventory.php"><i class="fas fa-archive"></i>Inventory</a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
