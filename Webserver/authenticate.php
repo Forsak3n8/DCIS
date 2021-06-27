@@ -4,7 +4,7 @@ session_start();
 $DATABASE_HOST = 'localhost';
 $DATABASE_USER = 'admin';
 $DATABASE_PASS = 'admin';
-$DATABASE_NAME = 'DICSIPS';
+$DATABASE_NAME = 'DCIS';
 // Try and connect using the info above.
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if ( mysqli_connect_errno() ) {
