@@ -20,6 +20,6 @@ while($row = $var->fetch_array())
 $rows[] = $row;
 }
 
-echo $rows[0]);
+echo $rows[0];
 
 ?>
