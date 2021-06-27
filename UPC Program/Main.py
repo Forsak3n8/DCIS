@@ -7,7 +7,7 @@ from time import sleep
 # Main app body
 app = tkinter.Tk()
 app.geometry("330x200")
-app.iconbitmap(os.path.join(sys._MEIPASS, "inventory.ico"))
+# app.iconbitmap(os.path.join(sys._MEIPASS, "inventory.ico"))
 app.title("Inventory System V0.1")
 app.resizable(width=False, height=False)
 
