@@ -25,9 +25,9 @@ $var = $stmt->get_result();
 $rows = $var->fetch_all(MYSQLI_ASSOC);
 foreach ($rows as $row) {
     printf("%s (%s)<br>", $row["title"], $row["qoh"]);
+	}
 
 $stmt->close();
-}
 ?>
 
 <!DOCTYPE html>
