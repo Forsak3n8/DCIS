@@ -22,6 +22,6 @@ $rows[] = $row;
 
 foreach($rows as $row)
 {
-echo $row['title'];
+echo $row['title'"\n"];
 }
 ?>
