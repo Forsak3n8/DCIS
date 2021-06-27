@@ -24,6 +24,4 @@ foreach($rows as $row)
 {
 echo $row['title'];
 }
-
-var_dump($row);
 ?>
