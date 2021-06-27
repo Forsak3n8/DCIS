@@ -24,10 +24,6 @@ $stmt = $con->prepare('SELECT title, qoh FROM cans');
 $stmt->execute();
 $var = $stmt->get_result();
 $rows = $var->fetch_all(MYSQLI_ASSOC);
-foreach ($rows as $row) {
-    printf("%s (%s)<br>", $row["title"], $row["qoh"]);
-	}
-
 $stmt->close();
 ?>
 
@@ -43,7 +39,7 @@ $stmt->close();
 	<body class="loggedin">
 		<nav class="navtop">
 			<div>
-				<h1>DICSIPS Inventory System</h1>
+				<h1>DCIS Inventory System</h1>
 				<a href="home.php"><i class="fas fa-home"></i>Home</a>
 				<a href="inventory.php"><i class="fas fa-archive"></i>Inventory</a>
 				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
