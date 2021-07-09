@@ -51,15 +51,15 @@ $stmt->close();
 			<form action="changecans.php" method="post">
 				<?php
 				$count = 0;
-				foreach ($rows as $row) {
 				echo "<fieldset class='inlineform'>";
+				foreach ($rows as $row) {
 					echo "<input type='text' id='title".$count."' name='title".$count."' readonly value='". $row['title'] ."'><br>";
 					echo "<label for='currentamount'>Current Amount:</label><br>";
 					echo "<input type='number' value='". $row['qoh'] ."' id='countinput".$count."' name='countinput".$count."'><br>";
+					$count++;
+					}
 					echo "<input type='submit' value='Submit'>";
 				echo "</fieldset>";
-				$count++;
-				}
 				?>
 			</form>
 			</div>
