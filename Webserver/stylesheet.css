@@ -147,6 +147,7 @@ fieldset {
 .inlineform input[type=text] {
 	border: none;
 	overflow: visible;
+	box-sizing: border-box;
 	font-weight: bold;
 	color: #4a536e;
 	margin: 5px 10px 5px 0;
