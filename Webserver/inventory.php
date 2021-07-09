@@ -52,7 +52,7 @@ $stmt->close();
 				<?php
 				foreach ($rows as $row) {
 				echo "<fieldset class='inlineform'>";
-					echo "<h1>". $row['title'] ."</h1>";
+					echo "<input type='text' id='title' disabled". $row['title'] .">";
 					echo "<label for='currentamount'>Current Amount:</label><br>";
 					echo "<input type='number' placeholder='". $row['qoh'] ."' id='countinput' name='countbox'><br>";
 					echo "<input type='submit' value='Submit'>";
