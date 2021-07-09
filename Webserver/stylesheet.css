@@ -168,6 +168,9 @@ fieldset {
 }
 
 .inlineform input[type=submit] {
+	position: relative;
+	margin-left: -83px;
+	top: 75px;
 	color: #c1c4c8;
 	background-color: #2f3947;
 }
