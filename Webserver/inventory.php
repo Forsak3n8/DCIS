@@ -55,7 +55,7 @@ $stmt->close();
 				echo "<fieldset class='inlineform'>";
 					echo "<input type='text' id='title' name='title' disabled placeholder='". $row['title'] ."'><br>";
 					echo "<label for='currentamount'>Current Amount:</label><br>";
-					echo "<input type='number' placeholder='". $row['qoh'] ."' id='countinput".$count."' name='countinput'><br>";
+					echo "<input type='number' placeholder='". $row['qoh'] ."' id='countinput".$count."' name='countinput".$count."'><br>";
 					echo "<input type='submit' value='Submit'>";
 				echo "</fieldset>";
 				$count++;
