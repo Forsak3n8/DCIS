@@ -18,10 +18,8 @@ if ( mysqli_connect_errno() ) {
 	// If there is an error with the connection, stop the script and display the error.
 	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
 }
-// Now we check if the data from the login form was submitted, isset() will check if the data exists.
-if ( !isset($_POST['countinput'], $_POST['title']) ) {
-	var_dump($_POST);
-}
+var_dump($_POST);
+
 
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
 // $stmt = $con->prepare('SELECT title, qoh FROM cans');
