@@ -53,7 +53,7 @@ $stmt->close();
 				$count = 0;
 				foreach ($rows as $row) {
 				echo "<fieldset class='inlineform'>";
-					echo "<input type='text' id='title".$count."' name='title".$count."' value='". $row['title'] ."'><br>";
+					echo "<input type='text' id='title".$count."' name='title".$count."' readonly value='". $row['title'] ."'><br>";
 					echo "<label for='currentamount'>Current Amount:</label><br>";
 					echo "<input type='number' value='". $row['qoh'] ."' id='countinput".$count."' name='countinput".$count."'><br>";
 					echo "<input type='submit' value='Submit'>";
